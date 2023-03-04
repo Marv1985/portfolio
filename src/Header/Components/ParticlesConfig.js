@@ -45,7 +45,7 @@ export default function ParticlesConfig() {
               quantity: 4,
             },
             repulse: {
-              distance: 150,
+              distance: 220,
               duration: 0.4,
             },
           },
@@ -56,7 +56,7 @@ export default function ParticlesConfig() {
           },
           links: {
             color: "#c6d534",
-            distance: 150,
+            distance: 200,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -71,15 +71,15 @@ export default function ParticlesConfig() {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 0.5,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1000,
             },
-            value: 80,
+            value: 70,
           },
           opacity: {
             value: 0.5,

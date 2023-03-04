@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -17,28 +17,29 @@
 }
 .intro h1 {
   font-family: var(--font-header);
-  font-size: 4vmax;
+  font-size: calc(var(--font-size-large) + 3.2vw);
   color: #ffffff;
   margin: 0;
+  line-height: 1;
 }
 
 .intro span {
   color: orange;
-  font-size: 2vmax;
+  font-size: calc(var(--font-size-medium) + 0.9vw);
   color: #ffffff;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  height: 4vmax;
-  width: 6vmax;
+  height: auto;
+  width: fit-content;
 }
 
 .about span {
   color: var(--orange-ubuntu);
-  font-size: 1.2vmax;
-  margin-bottom: 0.1em;
+  font-size: calc(var(--font-size-small) + 0.4vw);
+  margin-bottom: 0.2em;
 }
 #more-arrows {
   width: 30%;
@@ -78,4 +79,7 @@ polygon.arrow-middle {
 }
 polygon.arrow-top {
   opacity: 0.5;
+}
+svg {
+  width: calc(var(--font-size-small) + 1.5vw) !important;
 }
