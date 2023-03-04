@@ -43,4 +43,8 @@
   background-color: #e95420;
   background-size: 100%;
   transition: background 0s;
+  -webkit-transition: background 0s;
+  -moz-transition: background 0s;
+  -ms-transition: background 0s;
+  -o-transition: background 0s;
 }
