@@ -1,7 +1,7 @@
 .home-button {
   display: flex;
   flex-direction: row-reverse;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   left: 96%;
   top: 5%;
@@ -18,8 +18,8 @@
   -o-border-radius: 50%;
 }
 .home-button img {
+  box-shadow: 0.7vh 0vh 10px 0px var(--orange-ubuntu);
   border-radius: 50%;
-  position: sticky;
   height: calc(var(--font-size-large) + 2.2vw);
   width: auto;
   -webkit-border-radius: 50%;

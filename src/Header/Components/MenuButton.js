@@ -23,6 +23,7 @@ export default function MenuButton() {
             <li>My Work</li>
             <li>Contact</li>
           </ul>
+          <span className="by">BY MARVIN SHANNON</span>
         </div>
       </div>
 
