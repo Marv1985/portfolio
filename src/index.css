@@ -31,3 +31,7 @@ body {
   --orange-ubuntu: #e95420;
   --alt-font-color: #666666;
 }
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,112 @@
+.dropdown-menu {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-wrapper {
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.dropdown-menu nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  animation: slideDown 0.3s linear both;
+  -webkit-animation: slideDown 0.3s linear both;
+}
+.dropdown-menu nav a {
+  color: #fff;
+  margin-right: 2vw;
+  font-size: calc(var(--font-size-small) + 0.4vw);
+  font-weight: 500;
+}
+
+.dropdown-menu nav a:nth-last-of-type(4) {
+  margin-left: 2vw;
+}
+
+.dropdown-menu a:hover {
+  cursor: pointer;
+  color: var(--orange-ubuntu);
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 100vw;
+    transform: all;
+    -webkit-transform: all;
+    -moz-transform: all;
+    -ms-transform: all;
+    -o-transform: all;
+  }
+  100% {
+    opacity: 1;
+    height: 5vh;
+    width: 100vw;
+    transform: all;
+    -webkit-transform: all;
+    -moz-transform: all;
+    -ms-transform: all;
+    -o-transform: all;
+  }
+}
+
+/* reverse menu */
+.dropdown-menu-reverse {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu-reverse nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 5vh;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  animation: slideUp 0.3s linear both;
+  -webkit-animation: slideUp 0.3s linear both;
+}
+.dropdown-menu-reverse nav a {
+  color: #fff;
+  margin-right: 2vw;
+  font-size: calc(var(--font-size-small) + 0.4vw);
+  font-weight: 500;
+}
+
+.dropdown-menu-reverse nav a:nth-last-of-type(4) {
+  margin-left: 2vw;
+}
+
+.dropdown-menu-reverse a:hover {
+  cursor: pointer;
+  color: var(--orange-ubuntu);
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+    height: 5vh;
+    width: 100vw;
+    transform: all;
+    -webkit-transform: all;
+    -moz-transform: all;
+    -ms-transform: all;
+    -o-transform: all;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    width: 100vw;
+    transform: all;
+    -webkit-transform: all;
+    -moz-transform: all;
+    -ms-transform: all;
+    -o-transform: all;
+  }
+}

@@ -17,12 +17,12 @@ export default function MenuButton() {
           <span onClick={handleToggle}>
             <i className="arrow left"></i>
           </span>
-          <ul className="options">
-            <li>Home</li>
-            <li>About</li>
-            <li>My Work</li>
-            <li>Contact</li>
-          </ul>
+          <nav className="options">
+            <a href={"#0"}>Home</a>
+            <a href={"#0"}>About</a>
+            <a href={"#0"}>Projects</a>
+            <a href={"#0"}>Contact</a>
+          </nav>
           <span className="by">BY MARVIN SHANNON</span>
         </div>
       </div>
