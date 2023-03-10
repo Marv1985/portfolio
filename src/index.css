@@ -16,6 +16,7 @@ body {
 /* Fonts */
 :root {
   --font-header: "StileCon-Regular";
+  --code-font: "Courier";
   --font-size-large: 19px;
   --font-size-medium: 16px;
   --font-size-small: 13px;

@@ -2,7 +2,7 @@ export default function HeaderIntro() {
   return (
     <div className="intro">
       <h1>Marvin Shannon</h1>
-      <span>front end web developer</span>
+      <span>frontend web developer</span>
       <div className="about">
         <span id="about-me">about me</span>
         <svg

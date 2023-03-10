@@ -1,12 +1,21 @@
 import deathStar from "/home/marv/react-projects/portfolio/src/Header/images/death-star.svg";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButtonImage.css";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButton.css";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 export default function MenuButton() {
   const [show, setShow] = useState(true);
 
   const handleToggle = useCallback(() => setShow((prevShow) => !prevShow), []);
+
+  /* hide overflow when menu is open */
+  useEffect(() => {
+    if (show === false) {
+      document.body.style.overflow = "hidden";
+    } else if (show === true) {
+      document.body.style.overflow = "";
+    }
+  }, [show]);
 
   return (
     <div>
@@ -18,10 +27,18 @@ export default function MenuButton() {
             <i className="arrow left"></i>
           </span>
           <nav className="options">
-            <a href={"#0"}>Home</a>
-            <a href={"#0"}>About</a>
-            <a href={"#0"}>Projects</a>
-            <a href={"#0"}>Contact</a>
+            <a href={"#0"}>
+              Home <hr></hr>
+            </a>
+            <a href={"#0"}>
+              About <hr></hr>
+            </a>
+            <a href={"#0"}>
+              Projects <hr></hr>
+            </a>
+            <a href={"#0"}>
+              Contact <hr></hr>
+            </a>
           </nav>
           <span className="by">BY MARVIN SHANNON</span>
         </div>

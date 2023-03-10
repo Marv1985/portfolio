@@ -18,7 +18,6 @@
   color: var(--orange-ubuntu);
 }
 .onscreen span:nth-child(1) {
-  font-family: var(--font-header);
   font-weight: 700;
   font-size: calc(var(--font-size-medium) + 1vw);
 }
@@ -36,15 +35,15 @@
 }
 
 .about-p1 div {
+  font-family: var(--code-font);
   margin: 0;
   font-size: calc(var(--font-size-medium) + 0.9vw);
   color: var(--orange-ubuntu);
 }
 
 .about-p1 span:nth-child(1) {
-  font-family: var(--font-header);
-  font-weight: 700;
-  font-size: calc(var(--font-size-medium) + 1vw);
+  font-family: var(--code-font);
+  font-size: calc(var(--font-size-medium) + 0.9vw);
 }
 
 .about-p1 span {
@@ -62,11 +61,6 @@
   flex-direction: column;
 }
 
-.component {
-  border: 1px solid white;
-  height: 5em;
-}
-
 .about-p2 {
   font-size: calc(var(--font-size-small) + 0.5vw);
   color: #fff;
@@ -80,6 +74,8 @@
 .about-p2 p {
   margin: 0;
   max-width: 60%;
+  line-height: 1.3;
+  font-family: var(--code-font);
 }
 
 .about-p2 div {
@@ -88,15 +84,7 @@
   margin-right: 0.7em;
   white-space: nowrap;
   font-size: calc(var(--font-size-small) + 0.7vw);
-  font-weight: 900;
-  font-family: var(--font-header);
-}
-
-.about-me-wrapper {
-  display: grid;
-  grid-gap: 2em;
-  padding: 4% 3% 0 3%;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  font-family: var(--code-font);
 }
 
 .about-p1 span:nth-child(3) {

@@ -9,7 +9,7 @@ export default function AboutMe() {
   });
 
   return (
-    <div className="about-me-wrapper">
+    <div>
       {/* grid p1 */}
       <div className="about-wrap">
         <div className={isVisible ? "about-p1" : "onscreen"}>
@@ -23,13 +23,14 @@ export default function AboutMe() {
         <div className={isVisible ? "about-p2" : "about-p2-hid"}>
           <div ref={containerRef}>Marv : </div>
           <p>
-            " About Fully committed to the philosophy of life-long learning, I’m
-            a full stack developer with a deep passion for JavaScript, React and
-            all things web development. The unique combination of creativity,
-            logic, technology and never running out of new things to discover,
-            drives my excitement and passion for web development. When I’m not
-            at my computer I like to spend my time reading, keeping fit and
-            playing guitar. "
+            " I started coding over a couple of years ago and after having
+            learned the basics in Javascript and React.js I was hooked. The
+            unique combination of creativity, logic, technology and it's endless
+            possibilities really drives my passion for web development. My aim
+            is to persue a career as a front end developer furthering my
+            knowledge and learning new technologies along the way. When I’m not
+            at my computer you will find me in the gym or at home watching a
+            good sci-fi or anime series. "
           </p>
         </div>
 
@@ -39,7 +40,6 @@ export default function AboutMe() {
       </div>
 
       {/* grid p2 */}
-      <div className="component"></div>
     </div>
   );
 }

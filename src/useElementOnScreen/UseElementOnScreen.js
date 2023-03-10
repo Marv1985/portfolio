@@ -14,11 +14,16 @@ export default function UseElementOnScreen(options) {
 
     const observer = new IntersectionObserver(callBackFunction, options);
     if (current) observer.observe(current);
+    /* use to run only once */
+    if (isVisible === true) {
+      observer.unobserve(current);
+    }
 
     return () => {
       if (current) observer.observe(current);
+      observer.unobserve(current);
     };
-  }, [containerRef, options]);
+  }, [containerRef, options, isVisible]);
 
   return [containerRef, isVisible];
 }

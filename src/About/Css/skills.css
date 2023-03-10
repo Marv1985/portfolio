@@ -1,0 +1,11 @@
+.react svg {
+  height: calc(var(--font-size-large) + 2.8vw);
+  width: auto;
+  margin-top: 5%;
+}
+
+.tree {
+  font-family: var(--code-font);
+  color: #fff;
+  font-size: calc(var(--font-size-small) + 0.7vw);
+}
