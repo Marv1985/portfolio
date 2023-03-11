@@ -17,6 +17,7 @@ body {
 :root {
   --font-header: "StileCon-Regular";
   --code-font: "Courier";
+  --svg-size: 30px;
   --font-size-large: 19px;
   --font-size-medium: 16px;
   --font-size-small: 13px;

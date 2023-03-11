@@ -1,11 +1,14 @@
 import "/home/marv/react-projects/portfolio/src/About/Css/skills.css";
+import dot from "/home/marv/react-projects/portfolio/src/About/Images/full-stop.png";
 
 export default function Skills() {
   return (
     <div>
       {/* part 1 */}
-      <div className="tree">function Skills()</div>
+      <div className="tree">$ skills tree</div>
       <div className="react">
+        <img className="dot" src={dot} alt="" />
+        <div className="react-line"></div>
         <svg viewBox="0 0 128 128">
           <g fill="#61DAFB">
             <circle cx="64" cy="47.5" r="9.3"></circle>

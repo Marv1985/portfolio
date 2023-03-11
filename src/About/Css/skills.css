@@ -1,11 +1,56 @@
 .react svg {
-  height: calc(var(--font-size-large) + 2.8vw);
+  opacity: 0;
+  height: calc(var(--svg-size) + 2.5vw);
   width: auto;
-  margin-top: 5%;
+  padding: 5% 0 5% 0;
+  animation: 1.5s appear 1.5s linear both;
+  -webkit-animation: 1.5s appear 1.5s linear both;
+}
+
+.dot{
+  margin-bottom: -5%;
+}
+
+.react{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: min-content;
 }
 
 .tree {
   font-family: var(--code-font);
   color: #fff;
   font-size: calc(var(--font-size-small) + 0.7vw);
+}
+.react-line{
+  opacity: 0;
+  border-left: 3px solid var(--green-paste);
+  height: calc(var(--font-size-small) + 2vw);
+  width: 2px;
+  height: 5vh;
+  margin: 5% 0 5% 2px;
+  animation: .5s fadeInDown 1s linear both;
+  -webkit-animation: .5s fadeInDown 1s linear both;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    height: 0vh;
+}
+  100% {
+    opacity: 1;
+    height: 5vh;
+  }
+} 
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
