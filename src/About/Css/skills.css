@@ -71,8 +71,6 @@
 
 .skills-p1 {
   display: flex;
-  padding-bottom: 1vmax;
-  padding-top: 0.1vmax;
 }
 .skills-p2 {
   display: flex;
@@ -105,26 +103,36 @@
 }
 
 .react .react-svg {
+  padding-bottom: 1vmax;
+  padding-top: 0.1vmax;
   animation: 1s bounceIn 1s linear both;
   -webkit-animation: 1s bounceIn 1s linear both;
 }
 
 .react .javascript {
+  padding-bottom: 1vmax;
+  padding-top: 0.1vmax;
   animation: 1s bounceIn 1.1s linear both;
   -webkit-animation: 1s bounceIn 1.1s linear both;
 }
 
 .react .css {
+  padding-bottom: 1vmax;
+  padding-top: 0.1vmax;
   animation: 1s bounceIn 1.2s linear both;
   -webkit-animation: 1s bounceIn 1.2s linear both;
 }
 
 .react .html {
+  padding-bottom: 1vmax;
+  padding-top: 0.1vmax;
   animation: 1s bounceIn 1.3s linear both;
   -webkit-animation: 1s bounceIn 1.3s linear both;
 }
 
 .react .git {
+  padding-bottom: 1vmax;
+  padding-top: 0.1vmax;
   animation: 1s bounceIn 1.4s linear both;
   -webkit-animation: 1s bounceIn 1.4s linear both;
 }
@@ -147,4 +155,11 @@
 .react .webpack {
   animation: 1s bounceIn 1.8s linear both;
   -webkit-animation: 1s bounceIn 1.8s linear both;
+}
+
+.webpack svg{
+  padding-right: 0;
+}
+.git svg{
+  padding-right: 0;
 }
