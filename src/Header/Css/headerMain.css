@@ -3,6 +3,9 @@
   height: 100vh;
   width: auto;
 }
+.hyphen {
+  padding: 0 2px 0 1px;
+}
 .intro {
   display: flex;
   flex-direction: column;

@@ -19,8 +19,12 @@
 .about-me-wrapper {
   display: grid;
   grid-gap: 2em;
-  padding: 4% 3% 0 3%;
+  padding: 4% 3% 0 4%;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.component {
+  padding-left: 4%;
 }
 
 .about-header h2 {

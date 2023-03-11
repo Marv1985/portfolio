@@ -1,7 +1,5 @@
 .about-p1 {
   display: flex;
-  animation: aboutSlideIn 0.5s linear both;
-  -webkit-animation: aboutSlideIn 0.5s linear both;
 }
 
 .about-p2-hid {
