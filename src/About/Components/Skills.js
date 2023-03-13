@@ -3,12 +3,12 @@ import "/home/marv/react-projects/portfolio/src/About/Css/skills.css";
 import { useState } from "react";
 
 export default function Skills() {
-  const [icon, setIcon] = useState("iconActive.value");
+  const [icon, setIcon] = useState("iconHover.value");
   const [text, setText] = useState(false);
 
   function React() {
     setText(true);
-    setIcon("react");
+    setIcon("React");
   }
 
   function Js() {
@@ -53,7 +53,7 @@ export default function Skills() {
 
   function out() {
     setText(false);
-    setIcon("iconActive.value");
+    setIcon("iconHover.value");
   }
 
   const [containerRef, isVisible] = UseElementOnScreen({
@@ -74,6 +74,7 @@ export default function Skills() {
           <div className="skills-p1">
             {/* react */}
             <div
+              data-testid="react-svg-checker"
               onMouseOver={() => React()}
               onMouseLeave={() => out()}
               className="react-svg"
@@ -88,6 +89,7 @@ export default function Skills() {
 
             {/* javascript */}
             <div
+              data-testid="js-svg-checker"
               onMouseOver={() => Js()}
               onMouseLeave={() => out()}
               className="javascript"
@@ -106,6 +108,7 @@ export default function Skills() {
 
             {/* css */}
             <div
+              data-testid="css-svg-checker"
               onMouseOver={() => Css()}
               onMouseLeave={() => out()}
               className="css"
@@ -140,6 +143,7 @@ export default function Skills() {
 
             {/* html */}
             <div
+              data-testid="html-svg-checker"
               onMouseOver={() => Html()}
               onMouseLeave={() => out()}
               className="html"
@@ -166,6 +170,7 @@ export default function Skills() {
 
             {/* git */}
             <div
+              data-testid="git-svg-checker"
               onMouseOver={() => Git()}
               onMouseLeave={() => out()}
               className="git"
@@ -182,6 +187,7 @@ export default function Skills() {
           <div className="skills-p2">
             {/* jest */}
             <div
+              data-testid="jest-svg-checker"
               onMouseOver={() => Jest()}
               onMouseLeave={() => out()}
               className="jest"
@@ -196,6 +202,7 @@ export default function Skills() {
 
             {/* sass */}
             <div
+              data-testid="sass-svg-checker"
               onMouseOver={() => Sass()}
               onMouseLeave={() => out()}
               className="sass"
@@ -212,6 +219,7 @@ export default function Skills() {
 
             {/* firebase */}
             <div
+              data-testid="fire-svg-checker"
               onMouseOver={() => Firebase()}
               onMouseLeave={() => out()}
               className="firebase"
@@ -226,6 +234,7 @@ export default function Skills() {
 
             {/* webpack */}
             <div
+              data-testid="web-svg-checker"
               onMouseOver={() => Webpack()}
               onMouseLeave={() => out()}
               className="webpack"
@@ -242,7 +251,7 @@ export default function Skills() {
         <span className="bracket b2">{"</>"}</span>
       </div>
 
-      <div className="on-hover">
+      <div data-testid="hover-output" className="on-hover">
         <span>{"<div>"}</span>
         <span>{"{"}</span>
         <span key={Math.random()} className={text ? "icon-text" : "text"}>

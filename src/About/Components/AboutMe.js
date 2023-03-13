@@ -38,8 +38,6 @@ export default function AboutMe() {
           <span>{"}"}</span>
         </div>
       </div>
-
-      {/* grid p2 */}
     </div>
   );
 }
