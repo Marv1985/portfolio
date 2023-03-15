@@ -20,12 +20,14 @@
 
 .icon-text {
   animation: visible 2s;
+  -webkit-animation: visible 2s;
 }
 
-.text {
+/* commented out to stop animation on first render as intersection observer causes refresh/triggers animation */
+/* .text {
   animation: visible 2s both;
   -webkit-animation: visible 2s both;
-}
+} */
 
 @keyframes visible {
   from {

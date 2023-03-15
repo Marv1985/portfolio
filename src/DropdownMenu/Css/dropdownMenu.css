@@ -3,15 +3,8 @@
   align-items: center;
 }
 
-.dropdown-wrapper {
-  height: 5vh;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
 .dropdown-menu nav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   display: flex;
   align-items: center;

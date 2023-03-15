@@ -1,10 +1,32 @@
 .about-wrapper {
-  height: 100vh;
   width: auto;
   border-top: 0.1vh solid var(--green-paste);
+  padding-bottom: 6%;
 }
+
+.padding {
+  width: auto;
+  border-top: 0.1vh solid var(--green-paste);
+  padding-top: 5vh;
+  padding-bottom: 6%;
+}
+
 .about-header {
   visibility: visible;
+}
+
+.dropdown-wrapper {
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.fixed {
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .about-header hr {
