@@ -1,7 +1,7 @@
 import HeaderIntro from "./HeaderIntro";
 import MenuButton from "./MenuButton";
 import ParticlesConfig from "./ParticlesConfig";
-import "/home/marv/react-projects/portfolio/src/Header/Css/headerMain.css";
+import "/home/marv/react-projects/portfolio/src/Header/Css/index.css";
 
 export default function HeaderMain() {
   return (

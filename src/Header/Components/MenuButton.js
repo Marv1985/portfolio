@@ -1,4 +1,5 @@
-import deathStar from "/home/marv/react-projects/portfolio/src/Header/images/death-star.svg";
+import deathStar_64 from "/home/marv/react-projects/portfolio/src/Header/images/death-star-64.svg";
+import deathStar_32 from "/home/marv/react-projects/portfolio/src/Header/images/death-star-32.png";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButtonImage.css";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButton.css";
 import { useState, useCallback, useEffect } from "react";
@@ -46,7 +47,13 @@ export default function MenuButton() {
 
       {/* menu button */}
       <div className="home-button">
-        <img onClick={handleToggle} src={deathStar} alt="death star" />
+        <img
+          onClick={handleToggle}
+          src={deathStar_64}
+          srcSet={`${deathStar_64} 64w, ${deathStar_32} 32w`}
+          sizes={"calc(19px + 2.2vw)"}
+          alt="death star"
+        />
       </div>
     </div>
   );

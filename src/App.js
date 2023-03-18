@@ -1,13 +1,13 @@
-import About from "./About/Components";
+import About from "./About/Components/Index";
 import HeaderMain from "./Header/Components/Index";
-import ProjecsOne from "./Projects/ProjecsOne";
+import Projects from "./Projects/Components/Index";
 
 export default function App() {
   return (
     <>
       <HeaderMain />
       <About />
-      <ProjecsOne />
+      <Projects />
     </>
   );
 }

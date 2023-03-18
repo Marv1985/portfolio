@@ -4,7 +4,13 @@
 }
 
 .dropdown-menu nav {
-  background-color: rgba(0, 0, 0, 0.9);
+  /* background-color: rgba(198, 213, 52, .5); */
+  background-image: linear-gradient(
+    to right,
+    rgba(198, 213, 52, 1) 25%,
+    rgba(198, 213, 52, 0.3)
+  );
+  /* background-image: linear-gradient(to right, rgba(233, 84, 32, .9), rgba(233, 84, 32, .5)) ; */
   width: 100vw;
   display: flex;
   align-items: center;
@@ -12,7 +18,8 @@
   -webkit-animation: slideDown 0.3s linear both;
 }
 .dropdown-menu nav a {
-  color: #fff;
+  color: black;
+  border: 1px solid rgba(198, 213, 52, 0);
   margin-right: 3vw;
   font-size: calc(var(--font-size-small) + 0.4vw);
   font-weight: 500;
@@ -24,7 +31,9 @@
 
 .dropdown-menu a:hover {
   cursor: pointer;
-  color: var(--orange-ubuntu);
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid white;
 }
 
 @keyframes slideDown {
@@ -57,7 +66,11 @@
 }
 
 .dropdown-menu-reverse nav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    to right,
+    rgba(198, 213, 52, 1) 25%,
+    rgba(198, 213, 52, 0.3)
+  );
   height: 5vh;
   width: 55vw;
 
@@ -75,8 +88,9 @@
   -o-transition: all 0.3s;
 }
 .dropdown-menu-reverse nav a {
-  color: #fff;
+  color: black;
   margin-right: 3vw;
+  border: 1px solid rgba(198, 213, 52, 0);
   font-size: calc(var(--font-size-small) + 0.4vw);
   font-weight: 500;
 }

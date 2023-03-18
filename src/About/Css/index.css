@@ -1,12 +1,12 @@
 .about-wrapper {
   width: auto;
-  border-top: 0.1vh solid var(--green-paste);
+  border-top: 0.1vh solid rgba(198, 213, 52, 0.3);
   padding-bottom: 6%;
 }
 
 .padding {
   width: auto;
-  border-top: 0.1vh solid var(--green-paste);
+  border-top: 0.1vh solid rgba(198, 213, 52, 0.3);
   padding-top: 5vh;
   padding-bottom: 6%;
 }
@@ -30,7 +30,7 @@
 }
 
 .about-header hr {
-  width: calc(3em + 8vw);
+  width: calc(3em + 7vw);
   margin-top: -1%;
   border-style: none;
   border-bottom: 1vh solid #e95420;

@@ -3,7 +3,7 @@ import "/home/marv/react-projects/portfolio/src/About/Css/skills.css";
 import { useState } from "react";
 
 export default function Skills() {
-  const [icon, setIcon] = useState("iconHover.value");
+  const [icon, setIcon] = useState("icon.value");
   const [text, setText] = useState(false);
 
   function React() {
@@ -53,7 +53,7 @@ export default function Skills() {
 
   function out() {
     setText(false);
-    setIcon("iconHover.value");
+    setIcon("icon.value");
   }
 
   const [containerRef, isVisible] = UseElementOnScreen({
