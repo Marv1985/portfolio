@@ -62,8 +62,12 @@
   color: var(--orange-ubuntu);
 }
 
-.onscreen {
-  visibility: hidden !important;
+.onscreen svg {
+  visibility: hidden;
+  height: calc(var(--svg-size) + 2.5vw);
+  width: auto;
+  padding-right: 2.5vw;
+  margin-bottom: 0.4vmax;
 }
 
 .skills-icons {
@@ -83,8 +87,10 @@
 }
 
 .bracket {
+  display: block;
   color: var(--green-paste);
   font-size: calc(var(--font-size-medium) + 0.9vw);
+  margin: 2% 0 2% 0;
 }
 
 @keyframes bounceIn {

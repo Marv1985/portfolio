@@ -32,6 +32,7 @@
 .about-header hr {
   width: calc(3em + 7vw);
   margin-top: -1%;
+  margin-bottom: 5%;
   border-style: none;
   border-bottom: 1vh solid #e95420;
   /* animation: barSlideAcross 0.5s linear both;

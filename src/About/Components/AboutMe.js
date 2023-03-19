@@ -34,7 +34,7 @@ export default function AboutMe() {
           </p>
         </div>
 
-        <div className={isVisible ? "about-p3" : "about-p2-hid"}>
+        <div className={isVisible ? "about-p3" : "about-p3-hid"}>
           <span>{"}"}</span>
         </div>
       </div>

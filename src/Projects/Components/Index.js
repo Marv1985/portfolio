@@ -1,11 +1,12 @@
 import React from "react";
-import ProjecsOne from "./ProjecsOne";
-import "/home/marv/react-projects/portfolio/src/Projects/Css/index.css";
+import AnimeGame from "./RightSide/AnimeGame";
+import StrengthShop from "/home/marv/react-projects/portfolio/src/Projects/Components/LeftSide/StrengthShop";
 
 export default function Projects() {
   return (
     <div>
-      <ProjecsOne />
+      <StrengthShop />
+      <AnimeGame />
     </div>
   );
 }
