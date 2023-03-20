@@ -12,7 +12,7 @@ export default function AnimeGame() {
       head: "Anime Search Game",
     },
     paragraph: {
-      para: " A game of find the anime character. Similar to Where's Wally. Created using React, Firebase and Jest.",
+      para: " A game of find the anime character. Similar to Where's Wally. Created using React, Firebase and Jest testing.",
     },
   };
 

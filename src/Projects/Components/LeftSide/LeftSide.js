@@ -13,12 +13,7 @@ export default function LeftSide(props) {
 
   return (
     <div className="project-wrapper">
-      <div className={isVisible ? "project-header" : "project-header-hid"}>
-        <h2>PROJECTS</h2>
-        <hr></hr>
-      </div>
-
-      <div className="project-image">
+      <div className="project-image left-border">
         <img
           src={imageOne}
           srcSet={`${imageOne} 1828w, ${imageTwo} 1080w, ${imageThree} 720w, ${imageFour} 500w`}
@@ -31,7 +26,9 @@ export default function LeftSide(props) {
             <p>{paragraph}</p>
           </div>
           <div className={isVisible ? "find-site" : "find-site-hid"}>
-            <a href={"#0"}>Live App</a>
+            <a className="changeHide" href={"#0"}>
+              Live App
+            </a>
             <a href={"#0"}>GIT Repo</a>
           </div>
         </div>

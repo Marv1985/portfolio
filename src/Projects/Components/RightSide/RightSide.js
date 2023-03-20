@@ -11,8 +11,8 @@ export default function RightSide(props) {
   });
 
   return (
-    <div className="project-wrapper">
-      <div className="project-image">
+    <div className="project-wrapper right">
+      <div className="project-image right-border">
         <div ref={containerRef} className="about-project">
           <div className="about-site">
             <p>{header}</p>

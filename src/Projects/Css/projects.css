@@ -73,12 +73,37 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+/* right side grid wrap order reversed */
+@media only screen and (max-width: 1157px) {
+  .right .find-site {
+    grid-row-start: 2;
+  }
+  .right .project-image img {
+    grid-row-start: 1;
+  }
+}
+
 .project-image img {
   width: 95%;
   grid-column: span 2;
-
   margin-left: auto;
   margin-right: auto;
+}
+
+.left-border img {
+  box-shadow: 0.7vw 0.7vw 0.5vw 0vw var(--green-paste); /* Border right */
+}
+
+.right-border img {
+  box-shadow: -0.7vw 0.7vw 0.5vw 0vw var(--green-paste); /* Border left */
+}
+
+.changes .changeHide {
+  display: none;
+}
+.changes .left-border img {
+  border: 1px solid white;
+  box-shadow: 0.6vw 0.6vw 0.5vw 0vw var(--green-paste); /* Border right */
 }
 
 .about-project {

@@ -12,7 +12,7 @@ export default function strengthShop() {
       head: "Strength Shop Website",
     },
     paragraph: {
-      para: " A clone of one of a website I sometimes use for purchasing gym equipment. Created using React.",
+      para: " A clone of a website I use for purchasing gym equipment. Created using React.",
     },
   };
 
