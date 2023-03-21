@@ -17,7 +17,7 @@ beforeEach(() => {
 describe("Skills component renders tests", () => {
   it("check that component renders", () => {
     render(<Skills />);
-    const text = screen.getByText("iconHover.value");
+    const text = screen.getByText("icon.value");
     expect(text).toBeInTheDocument();
   });
 

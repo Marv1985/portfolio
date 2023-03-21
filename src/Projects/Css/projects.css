@@ -154,8 +154,8 @@
 }
 
 .find-site a:nth-of-type(2) {
-  animation: 0.5s projectSlider 0.8s linear both;
-  -webkit-animation: 0.5s projectSlider 0.8s linear both;
+  animation: 0.5s projectSlider 1s linear both;
+  -webkit-animation: 0.5s projectSlider 1s linear both;
 }
 
 .project-header-hid h2 {

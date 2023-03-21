@@ -7,7 +7,7 @@ describe("HeaderIntro component tests", () => {
   it("check that image renders", () => {
     render(<MenuButton />);
     const image = screen.getByAltText(/death star/i);
-    expect(image).toHaveAttribute("src", "death-star.svg");
+    expect(image).toHaveAttribute("src", "death-star-64.svg");
   });
 
   it("check that image click opens menu", () => {

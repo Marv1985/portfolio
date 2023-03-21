@@ -27,7 +27,7 @@ export default function RightSide(props) {
         <img
           src={imageOne}
           srcSet={`${imageOne} 1828w, ${imageTwo} 1080w, ${imageThree} 720w, ${imageFour} 500w`}
-          alt="strength shop site screen shot"
+          alt="project"
         />
       </div>
     </div>

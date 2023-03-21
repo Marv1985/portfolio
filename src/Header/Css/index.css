@@ -108,6 +108,7 @@ polygon.arrow-top {
   opacity: 0.5;
 }
 .about svg {
+  margin-top: 4%;
   width: calc(var(--font-size-small) + 1.5vw) !important;
   animation: 0.4s slideIn 1.6s linear both;
   -webkit-animation: 0.4s slideIn 1.6s linear both;
