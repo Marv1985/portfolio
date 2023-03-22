@@ -18,33 +18,21 @@
   -o-border-radius: 50%;
 }
 .home-button img {
-  box-shadow: 0.7vh 0vh 10px 0px var(--orange-ubuntu);
   border-radius: 50%;
-  /* height: calc(var(--font-size-large) + 2.2vw); */
-  width: auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transition: background 0.8s;
-  -webkit-transition: background 0.8s;
-  -moz-transition: background 0.8s;
-  -ms-transition: background 0.8s;
-  -o-transition: background 0.8s;
+  height: calc(var(--font-size-large) + 2.2vw);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .home-button img:hover {
   cursor: pointer;
-  background: #4b1c0a radial-gradient(circle, transparent 1%, #4b1c0a 1%)
-    center/15000%;
-}
-
-.home-button img:active {
-  background-color: #e95420;
-  background-size: 100%;
-  transition: background 0s;
-  -webkit-transition: background 0s;
-  -moz-transition: background 0s;
-  -ms-transition: background 0s;
-  -o-transition: background 0s;
+  scale: 1.08;
+  transition: scale 0.2s ease;
+  -webkit-transition: scale 0.2s ease;
+  -moz-transition: scale 0.2s ease;
+  -ms-transition: scale 0.2s ease;
+  -o-transition: scale 0.2s ease;
 }

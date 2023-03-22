@@ -81,6 +81,10 @@
   .right .project-image img {
     grid-row-start: 1;
   }
+
+  .changes a:last-of-type {
+    margin-top: 0%;
+  }
 }
 
 .project-image img {

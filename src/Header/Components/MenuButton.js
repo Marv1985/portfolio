@@ -1,4 +1,4 @@
-import deathStar_64 from "/home/marv/react-projects/portfolio/src/Header/images/death-star-64.svg";
+import deathStar_64 from "/home/marv/react-projects/portfolio/src/Header/images/death-star-64.png";
 import deathStar_32 from "/home/marv/react-projects/portfolio/src/Header/images/death-star-32.png";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButtonImage.css";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButton.css";
