@@ -4,7 +4,7 @@ import ContactHeader from "./ContactHeader";
 
 export default function Contact() {
   return (
-    <div>
+    <div id="contact">
       <ContactHeader />
       <ContactDetails />
     </div>

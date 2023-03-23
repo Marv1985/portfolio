@@ -13,7 +13,7 @@ export default function About() {
   });
 
   return (
-    <div className={isVisible ? "about-wrapper" : "padding"}>
+    <div id="about" className={isVisible ? "about-wrapper" : "padding"}>
       <div className={isVisible ? "dropdown-wrapper" : "fixed"}>
         <DropDownMenu />
       </div>

@@ -1,5 +1,6 @@
 import "/home/marv/react-projects/portfolio/src/DropdownMenu/Css/dropdownMenu.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 export default function DropDownMenu() {
   const [show, setShow] = useState(false);
@@ -33,10 +34,30 @@ export default function DropDownMenu() {
     <div className="dropdown-wrapper">
       <div className={show ? "dropdown-menu" : "dropdown-menu-reverse"}>
         <nav>
-          <a href={"#0"}>Home</a>
-          <a href={"#0"}>About</a>
-          <a href={"#0"}>Projects</a>
-          <a href={"#0"}>Contact</a>
+          <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+            Home
+          </Link>
+          <Link to="about" spy={true} smooth={true} offset={20} duration={500}>
+            About
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Contact
+          </Link>
         </nav>
       </div>
     </div>

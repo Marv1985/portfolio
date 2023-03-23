@@ -6,7 +6,7 @@ import StrengthShop from "/home/marv/react-projects/portfolio/src/Projects/Compo
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects">
       <ProjectsHeader />
       <StrengthShop />
       <AnimeGame />

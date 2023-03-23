@@ -19,7 +19,7 @@ export default function MenuButton() {
   }, [show]);
 
   return (
-    <div>
+    <div id="home">
       {/* menu popout */}
       <div>
         <div className={show ? "menu-close" : "menu-overlay"}></div>
