@@ -1,0 +1,41 @@
+.message-sent-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  justify-content: center;
+  width: calc(3.8em + 18vw);
+  height: 15vh;
+  background-color: white;
+  border: calc(2px + 0.3vw) solid var(--orange-ubuntu);
+  border-radius: calc(3px + 0.5vw);
+  -webkit-border-radius: calc(3px + 0.5vw);
+  -moz-border-radius: calc(3px + 0.5vw);
+  -ms-border-radius: calc(3px + 0.5vw);
+  -o-border-radius: calc(3px + 0.5vw);
+}
+
+.sent-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.message-sent-wrapper p {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: var(--code-font);
+  font-size: calc(var(--font-size-small) + 0.4vw);
+  color: black;
+}

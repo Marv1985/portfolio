@@ -3,6 +3,7 @@ import deathStar_32 from "/home/marv/react-projects/portfolio/src/Header/images/
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButtonImage.css";
 import "/home/marv/react-projects/portfolio/src/Header/Css/menuButton.css";
 import { useState, useCallback, useEffect } from "react";
+import { Link } from "react-scroll";
 
 export default function MenuButton() {
   const [show, setShow] = useState(true);
@@ -28,18 +29,46 @@ export default function MenuButton() {
             <i className="arrow left"></i>
           </span>
           <nav className="options">
-            <a href={"#0"}>
-              Home <hr></hr>
-            </a>
-            <a href={"#0"}>
-              About <hr></hr>
-            </a>
-            <a href={"#0"}>
-              Projects <hr></hr>
-            </a>
-            <a href={"#0"}>
-              Contact <hr></hr>
-            </a>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={handleToggle}
+            >
+              Home<hr></hr>
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={500}
+              onClick={handleToggle}
+            >
+              About<hr></hr>
+            </Link>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={handleToggle}
+            >
+              Projects<hr></hr>
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={handleToggle}
+            >
+              Contact<hr></hr>
+            </Link>
           </nav>
           <span className="by">BY MARVIN SHANNON</span>
         </div>

@@ -1,25 +1,80 @@
-import React from "react";
+import React, { useRef } from "react";
 import "/home/marv/react-projects/portfolio/src/Contact/Css/contactDetails.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { send } from "emailjs-com";
+import MessageSent from "../../MessageSent/MessageSent";
 
 export default function ContactDetails() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const wrapperRef = useRef(null);
+
+  /* click to hide modal */
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && wrapperRef.current.contains(event.target)) {
+        setShow(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [wrapperRef]);
+
+  const [show, setShow] = useState(true);
+  const [offset, setOffset] = useState(0);
+
+  /* scroll to hide modal */
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+
+    if (offset > 0) {
+      setShow(false);
+    }
+    if (offset < 0) {
+      setShow(false);
+    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [offset]);
+
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    alert(
-      `The name you entered was: ${name} email is ${email} message is ${message}`
-    );
-    setName("");
-    setEmail("");
-    setMessage("");
+    send("service_xzco98r", "template_bdzz1wa", toSend, "ejcMDdG0HzSXhDJhO")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+
+    setToSend({
+      from_name: "",
+      from_email: "",
+      message: "",
+    });
+
+    setShow(true);
   };
 
   return (
     <div className="details-paragraph">
+      {show ? (
+        <div ref={wrapperRef}>
+          <MessageSent />
+        </div>
+      ) : null}
+
       <p>
         If you have any questions please feel free to drop me a message and I
         will get back to you!
@@ -30,30 +85,31 @@ export default function ContactDetails() {
           <input
             placeholder="Name"
             title="Please enter your name"
+            name="from_name"
             pattern="[a-zA-Z0-9]+"
             type="text"
-            value={name || ""}
-            onChange={(e) => setName(e.target.value)}
+            value={toSend.from_name}
+            onChange={handleChange}
             required
           />
           <input
             placeholder="Email"
             title="Please enter your e-mail"
             type="email"
-            value={email || ""}
-            onChange={(e) => setEmail(e.target.value)}
+            name="from_email"
+            value={toSend.from_email}
+            onChange={handleChange}
             required
           />
 
           <textarea
-            name="text-area"
+            name="message"
             title="Message input box"
             placeholder="Message"
-            onChange={(e) => setMessage(e.target.value)}
+            value={toSend.message}
+            onChange={handleChange}
             required
           ></textarea>
-
-          {/* <button type='submit'>submit</button> */}
 
           <div className="wrapper">
             <button type="submit">
