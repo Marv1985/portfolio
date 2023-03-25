@@ -27,11 +27,24 @@
   -moz-border-radius: 0.5vw;
   -ms-border-radius: 0.5vw;
   -o-border-radius: 0.5vw;
-  border: 0.25vw solid var(--main-color);
+  border: 3px solid var(--main-color);
 }
 
 .input-boxes {
   margin-bottom: 10%;
+}
+
+@media screen and (max-width:1000px) {
+  .details-paragraph form input, textarea {
+    border: 2px solid var(--main-color) !important;
+  }
+  .input-boxes form input:focus,
+  textarea:focus {
+  border: 2px solid var(--orange-ubuntu) !important;
+}
+.details-paragraph button{
+  margin-left: 2px !important;
+}
 }
 
 textarea {
@@ -39,7 +52,7 @@ textarea {
   height: 20vh;
   margin-bottom: 2%;
   padding: 2%;
-  border: 0.25vw solid var(--main-color);
+  border: 3px solid var(--main-color);
   border-radius: 0.5vw;
   -webkit-border-radius: 0.5vw;
   -moz-border-radius: 0.5vw;
@@ -50,11 +63,11 @@ textarea {
 .input-boxes form input:focus,
 textarea:focus {
   outline: none;
-  border: 0.25vw solid var(--orange-ubuntu);
+  border: 3px solid var(--orange-ubuntu);
 }
 
 .details-paragraph button {
-  margin-left: 0.25vw;
+  margin-left: 3px;
   width: calc(var(--hex-size) + 6vw);
   padding: 2%;
   font-family: var(--code-font);
