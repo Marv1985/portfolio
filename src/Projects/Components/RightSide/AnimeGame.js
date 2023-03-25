@@ -19,6 +19,9 @@ export default function AnimeGame() {
   return (
     <div>
       <RightSide
+        live_url={["https://anime-search-2bb0b.web.app/"]}
+        git_url={["https://github.com/Marv1985/anime-search"]}
+        target={["_blank"]}
         imageOne={animeGame1828}
         imageTwo={animeGame1080}
         imageThree={animeGame720}

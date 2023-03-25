@@ -1,8 +1,17 @@
 import UseElementOnScreen from "../../../useElementOnScreen/UseElementOnScreen";
 
 export default function RightSide(props) {
-  const { imageOne, imageTwo, imageThree, imageFour, header, paragraph } =
-    props;
+  const {
+    imageOne,
+    imageTwo,
+    imageThree,
+    imageFour,
+    header,
+    paragraph,
+    git_url,
+    target,
+    live_url,
+  } = props;
 
   const [containerRef, isVisible] = UseElementOnScreen({
     root: null,
@@ -20,8 +29,12 @@ export default function RightSide(props) {
             <p>{paragraph}</p>
           </div>
           <div className={isVisible ? "find-site" : "find-site-hid"}>
-            <a href={"#0"}>Live App</a>
-            <a href={"#0"}>GIT Repo</a>
+            <a href={live_url} target={target}>
+              Live App
+            </a>
+            <a href={git_url} target={target}>
+              GIT Repo
+            </a>
           </div>
         </div>
         <img

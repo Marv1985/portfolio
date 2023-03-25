@@ -20,7 +20,7 @@ export default function ContactDetails() {
     };
   }, [wrapperRef]);
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [offset, setOffset] = useState(0);
 
   /* scroll to hide modal */

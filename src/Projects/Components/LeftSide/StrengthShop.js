@@ -18,6 +18,9 @@ export default function strengthShop() {
 
   return (
     <LeftSide
+      live_url={["https://strength-shop.web.app/"]}
+      git_url={["https://github.com/Marv1985/strength-shop"]}
+      target={["_blank"]}
       imageOne={strengthShop1828}
       imageTwo={strengthshop1080}
       imageThree={strengthshop720}
