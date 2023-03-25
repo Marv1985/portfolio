@@ -18,6 +18,15 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+
+/* keep header centered */
+@media screen and (max-width: 541px) {
+  .intro{
+    width: min-content;
+  }
+  
+}
+
 .intro h1 {
   font-family: var(--font-header);
   font-size: calc(var(--font-size-large) + 3.2vw);

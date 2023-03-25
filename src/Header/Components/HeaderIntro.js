@@ -5,7 +5,7 @@ export default function HeaderIntro() {
     <div className="intro">
       <h1>Marvin Shannon</h1>
       <span>
-        front<span className="hyphen">-</span>end web developer
+        front<span className="hyphen">-</span>end web&nbsp;developer
       </span>
       <div className="about">
         <span id="about-me">about me</span>
