@@ -27,7 +27,7 @@ export default function AboutMe() {
             ago and after having learned the basics in Javascript and React.js,
             I was hooked. The unique combination of creativity, logic,
             technology and it's endless possibilities really drives my passion
-            for web development. My aim is to persue a career as a front end
+            for web development. My aim is to persue a career as a front-end
             developer furthering my knowledge and learning new technologies
             along the way. When I’m not at my computer you will find me in the
             gym or at home watching a good sci-fi or anime series. "
