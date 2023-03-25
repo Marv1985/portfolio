@@ -19,6 +19,8 @@ export default function MyPortfolio() {
   return (
     <div className="changes">
       <LeftSide
+        git_url={["https://github.com/Marv1985/portfolio"]}
+        target={["_blank"]}
         header={projectInfo.header.head}
         paragraph={projectInfo.paragraph.para}
         imageOne={portfolio1828}

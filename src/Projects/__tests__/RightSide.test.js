@@ -14,7 +14,7 @@ beforeEach(() => {
   window.IntersectionObserver = mockIntersectionObserver;
 });
 
-describe("AboutMe component tests", () => {
+describe("AnimeGame component tests", () => {
   it("check that header renders", () => {
     render(<AnimeGame />);
     const text = screen.getByText(/Anime Search Game/i);
@@ -31,5 +31,21 @@ describe("AboutMe component tests", () => {
     render(<AnimeGame />);
     const image = screen.getByAltText(/project/i);
     expect(image).toHaveAttribute("src", "anime-game1828.png");
+  });
+});
+
+describe("AnimeGame links test", () => {
+  it("check git link work", () => {
+    render(<AnimeGame />);
+    const link = screen.getByRole("link", { name: "GIT Repo" });
+    expect(link).toHaveAttribute(
+      "href",
+      "https://github.com/Marv1985/anime-search"
+    );
+  });
+  it("check live link work", () => {
+    render(<AnimeGame />);
+    const link = screen.getByRole("link", { name: "Live App" });
+    expect(link).toHaveAttribute("href", "https://anime-search-2bb0b.web.app/");
   });
 });

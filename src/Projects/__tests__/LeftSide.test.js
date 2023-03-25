@@ -54,3 +54,30 @@ describe("Test strength shop project elements render", () => {
     expect(image).toHaveAttribute("src", "Strength-shop-1828.png");
   });
 });
+
+describe("strengthshop links test", () => {
+  it("check git link work", () => {
+    render(<StrengthShop />);
+    const link = screen.getByRole("link", { name: "GIT Repo" });
+    expect(link).toHaveAttribute(
+      "href",
+      "https://github.com/Marv1985/strength-shop"
+    );
+  });
+  it("check live link work", () => {
+    render(<StrengthShop />);
+    const link = screen.getByRole("link", { name: "Live App" });
+    expect(link).toHaveAttribute("href", "https://strength-shop.web.app/");
+  });
+});
+
+describe("MyPortfolio links test", () => {
+  it("check git link work", () => {
+    render(<MyPortfolio />);
+    const link = screen.getByRole("link", { name: "GIT Repo" });
+    expect(link).toHaveAttribute(
+      "href",
+      "https://github.com/Marv1985/portfolio"
+    );
+  });
+});

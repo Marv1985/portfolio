@@ -83,6 +83,7 @@ export default function ContactDetails() {
       <div className="input-boxes">
         <form onSubmit={handleSubmit}>
           <input
+            id="name"
             placeholder="Name"
             title="Please enter your name"
             name="from_name"
@@ -93,6 +94,7 @@ export default function ContactDetails() {
             required
           />
           <input
+            id="email"
             placeholder="Email"
             title="Please enter your e-mail"
             type="email"
