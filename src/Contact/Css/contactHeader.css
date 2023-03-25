@@ -13,9 +13,9 @@
 }
 
 .contact-head-wrap hr {
-  width: calc(3.9em + 1.7vw);
+  width: calc(3.9em + 1.2vw);
   margin-top: -1%;
   margin-bottom: 5%;
   border-style: none;
-  border-bottom: 1vh solid #e95420;
+  border-bottom: calc(4px + .3vh) solid #e95420;
 }
