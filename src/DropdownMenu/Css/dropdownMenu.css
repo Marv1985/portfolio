@@ -66,7 +66,9 @@
   }
   100% {
     opacity: 1;
-    height: 5vh;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    height: 2vh;
     width: 100vw;
     transform: all;
     -webkit-transform: all;
@@ -88,7 +90,7 @@
     rgba(198, 213, 52, 1) 25%,
     rgba(198, 213, 52, 0.3)
   );
-  height: 5vh;
+
   width: 55vw;
 
   /* css to get menu to slide back up */
@@ -124,7 +126,9 @@
 @keyframes slideUp {
   0% {
     opacity: 1;
-    height: 5vh;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    height: 2vh;
     width: 100vw;
     transform: all;
     -webkit-transform: all;
