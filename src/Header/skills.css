@@ -83,6 +83,10 @@
   display: flex;
   padding-bottom: 0.3vmax;
 }
+/* .git {
+  margin-left: -0.5vw;
+  margin-right: 2.5vw;
+} */
 
 .bracket {
   display: block;
