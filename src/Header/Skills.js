@@ -157,12 +157,9 @@ export default function Skills() {
                 ></path>
               </svg>
             </div>
-
-           
           </div>
 
           <div className="skills-p2">
-          
             {/* jest */}
             <div
               data-testid="jest-svg-checker"
@@ -178,8 +175,8 @@ export default function Skills() {
               </svg>
             </div>
 
-              {/* git */}
-              <div
+            {/* git */}
+            <div
               data-testid="git-svg-checker"
               onMouseOver={() => Git()}
               onMouseLeave={() => out()}
@@ -209,8 +206,6 @@ export default function Skills() {
                 ></path>
               </svg>
             </div>
-          
-    
           </div>
         </div>
 

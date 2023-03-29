@@ -34,17 +34,18 @@
   margin-bottom: 10%;
 }
 
-@media screen and (max-width:1000px) {
-  .details-paragraph form input, textarea {
+@media screen and (max-width: 1000px) {
+  .details-paragraph form input,
+  textarea {
     border: 2px solid var(--main-color) !important;
   }
   .input-boxes form input:focus,
   textarea:focus {
-  border: 2px solid var(--orange-ubuntu) !important;
-}
-.details-paragraph button{
-  margin-left: 2px !important;
-}
+    border: 2px solid var(--orange-ubuntu) !important;
+  }
+  .details-paragraph button {
+    margin-left: 2px !important;
+  }
 }
 
 textarea {

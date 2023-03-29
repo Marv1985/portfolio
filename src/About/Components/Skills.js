@@ -226,7 +226,6 @@ export default function Skills() {
                 ></path>
               </svg>
             </div>
-          
           </div>
         </div>
 

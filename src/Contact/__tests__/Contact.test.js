@@ -33,10 +33,9 @@ describe("Contact Details component tests", () => {
 
   it("check submit button fires", () => {
     render(<ContactDetails />);
-    const button = screen.getByRole('button', {name: /submit/i});
+    const button = screen.getByRole("button", { name: /submit/i });
     fireEvent.click(button);
     const text = screen.getByText(/message sent!/i);
     expect(text).toBeInTheDocument();
-  })
-
+  });
 });
