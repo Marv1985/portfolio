@@ -77,12 +77,16 @@
 
 .skills-p1 {
   display: flex;
+  padding-bottom: 0.3vmax;
 }
 .skills-p2 {
   display: flex;
   padding-bottom: 0.3vmax;
 }
-
+/* .git {
+  margin-left: -0.5vw;
+  margin-right: 2.5vw;
+} */
 
 .bracket {
   display: block;
@@ -153,19 +157,4 @@
   -webkit-animation: 1s bounceIn 1.6s linear both;
 }
 
-.react .firebase {
-  animation: 1s bounceIn 1.7s linear both;
-  -webkit-animation: 1s bounceIn 1.7s linear both;
-}
 
-.react .webpack {
-  animation: 1s bounceIn 1.8s linear both;
-  -webkit-animation: 1s bounceIn 1.8s linear both;
-}
-
-.webpack svg {
-  padding-right: 0;
-}
-.git svg {
-  padding-right: 0;
-}
