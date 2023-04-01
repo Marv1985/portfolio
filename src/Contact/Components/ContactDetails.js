@@ -87,7 +87,7 @@ export default function ContactDetails() {
             placeholder="Name"
             title="Please enter your name"
             name="from_name"
-            pattern="[a-zA-Z0-9]+"
+            pattern="[A-Za-z ]{1,32}"
             type="text"
             value={toSend.from_name}
             onChange={handleChange}
@@ -99,6 +99,7 @@ export default function ContactDetails() {
             title="Please enter your e-mail"
             type="email"
             name="from_email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             value={toSend.from_email}
             onChange={handleChange}
             required
