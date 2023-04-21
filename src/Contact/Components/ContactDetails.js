@@ -99,7 +99,6 @@ export default function ContactDetails() {
             title="Please enter your e-mail"
             type="email"
             name="from_email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             value={toSend.from_email}
             onChange={handleChange}
             required
