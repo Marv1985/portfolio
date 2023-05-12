@@ -87,6 +87,10 @@
   }
 }
 
+.changes .hide-link{
+  display: none;
+}
+
 .project-image img {
   width: 95%;
   grid-column: span 2;

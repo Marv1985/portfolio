@@ -1,15 +1,13 @@
 import React from "react";
-import MyPortfolio from "./LeftSide/MyPortfolio";
+import MyPortfolio from "./RightSide/MyPortfolio";
 import ProjectsHeader from "./ProjectsHeader";
-import AnimeGame from "./RightSide/AnimeGame";
-import StrengthShop from "/home/marv/react-projects/portfolio/src/Projects/Components/LeftSide/StrengthShop";
+import WorkoutApp from "./LeftSide/WorkoutApp";
 
 export default function Projects() {
   return (
     <div id="projects">
       <ProjectsHeader />
-      <StrengthShop />
-      <AnimeGame />
+      <WorkoutApp />
       <MyPortfolio />
     </div>
   );

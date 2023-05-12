@@ -29,7 +29,7 @@ export default function RightSide(props) {
             <p>{paragraph}</p>
           </div>
           <div className={isVisible ? "find-site" : "find-site-hid"}>
-            <a href={live_url} target={target}>
+            <a className="hide-link" href={live_url} target={target}>
               Live App
             </a>
             <a href={git_url} target={target}>

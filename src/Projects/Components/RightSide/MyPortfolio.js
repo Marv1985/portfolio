@@ -1,10 +1,10 @@
 import React from "react";
-import LeftSide from "./LeftSide";
 import "/home/marv/react-projects/portfolio/src/Projects/Css/projects.css";
 import portfolio1828 from "/home/marv/react-projects/portfolio/src/Projects/Images/My-portfolio/portfolio1828.png";
 import portfolio1080 from "/home/marv/react-projects/portfolio/src/Projects/Images/My-portfolio/portfolio1080.png";
 import portfolio720 from "/home/marv/react-projects/portfolio/src/Projects/Images/My-portfolio/portfolio720.png";
 import portfolio500 from "/home/marv/react-projects/portfolio/src/Projects/Images/My-portfolio/portfolio500.png";
+import RightSide from "./RightSide";
 
 export default function MyPortfolio() {
   const projectInfo = {
@@ -18,7 +18,7 @@ export default function MyPortfolio() {
 
   return (
     <div className="changes">
-      <LeftSide
+      <RightSide
         git_url={["https://github.com/Marv1985/portfolio"]}
         target={["_blank"]}
         header={projectInfo.header.head}
