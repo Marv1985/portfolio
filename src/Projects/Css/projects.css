@@ -102,17 +102,20 @@
   box-shadow: 0.7vw 0.7vw 0.5vw 0vw var(--green-paste); /* Border right */
 }
 
-.right-border img {
+.changes .right-border img {
+  border-top: 1px solid var(--green-paste);
+  border-right: 1px solid var(--green-paste);
   box-shadow: -0.7vw 0.7vw 0.5vw 0vw var(--green-paste); /* Border left */
 }
 
 .changes .changeHide {
   display: none;
 }
-.changes .left-border img {
+
+/* .changes .left-border img {
   border: 1px solid white;
   box-shadow: 0.6vw 0.6vw 0.5vw 0vw var(--green-paste); /* Border right */
-}
+
 
 .about-project {
   height: 100%;
