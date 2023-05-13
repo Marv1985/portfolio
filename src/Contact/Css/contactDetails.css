@@ -46,6 +46,9 @@
   .details-paragraph button {
     margin-left: 2px !important;
   }
+  .details-paragraph p{
+    padding-left: 0;
+  }
 }
 
 textarea {
