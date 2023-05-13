@@ -35,6 +35,9 @@
   color: var(--green-paste);
   font-size: calc(var(--font-size-medium) + 0.73vw);
 }
+.no-line-break{
+  white-space: nowrap;
+}
 
 .about-p1 div {
   font-family: var(--code-font);

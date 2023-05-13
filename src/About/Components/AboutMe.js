@@ -30,7 +30,7 @@ export default function AboutMe() {
             for web development. My aim is to persue a career as a front-end
             developer furthering my knowledge and learning new technologies
             along the way. When I’m not at my computer you will find me in the
-            gym or at home watching a good sci-fi or anime series. "
+            gym or at home watching a good sci-fi or anime <span className="no-line-break">series. "</span>
           </p>
         </div>
 
