@@ -7,9 +7,10 @@ export default function HeaderIntro() {
       <span>
         front<span className="hyphen">-</span>end web&nbsp;developer
       </span>
+      <Link to="about" spy={true} smooth={true} offset={20} duration={500}>
       <div className="about">
         <span id="about-me">about me</span>
-        <Link to="about" spy={true} smooth={true} offset={20} duration={500}>
+       
           <svg
             width="50%"
             height="50%"
@@ -30,8 +31,9 @@ export default function HeaderIntro() {
               points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "
             />
           </svg>
+          </div>
         </Link>
-      </div>
+      
     </div>
   );
 }
