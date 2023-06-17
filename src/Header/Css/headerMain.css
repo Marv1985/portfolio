@@ -1,0 +1,81 @@
+#tsparticles {
+  position: relative;
+  height: 100vh;
+  width: auto;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.intro h1 {
+  font-family: var(--font-header);
+  font-size: 4vmax;
+  color: #ffffff;
+  margin: 0;
+}
+
+.intro span {
+  color: orange;
+  font-size: 2vmax;
+  color: #ffffff;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 4vmax;
+  width: 6vmax;
+}
+
+.about span {
+  color: var(--orange-ubuntu);
+  font-size: 1.2vmax;
+  margin-bottom: 0.1em;
+}
+#more-arrows {
+  width: 30%;
+  height: auto;
+}
+#more-arrows:hover polygon {
+  fill: var(--orange-ubuntu);
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(18px);
+}
+
+.about:hover polygon {
+  fill: var(--orange-ubuntu);
+  transition: all 0.2s ease-out;
+}
+.about:hover polygon.arrow-bottom {
+  transform: translateY(-18px);
+}
+.about:hover polygon.arrow-top {
+  transform: translateY(18px);
+}
+.about:hover {
+  cursor: pointer;
+}
+
+polygon {
+  fill: #fff;
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+}
